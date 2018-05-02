@@ -1,0 +1,53 @@
+.negative-interest {
+    color: red;
+}
+
+.positive-percentage {
+    color: green;
+}
+
+.btn-size {
+    width: 100%;
+}
+
+@media screen and (max-width: 770px) {
+    table {
+        border: 0;
+    }
+
+    table thead{
+        display: none;
+    }
+
+    table tr {
+        margin-bottom: 10px;
+        display: block;
+        border-bottom: 2px solid #ddd;
+    }
+
+    table td {
+        display: block;
+        text-align: right;
+        border-bottom: 1px dotted #ccc;
+
+    }
+
+    table td:before {
+        content: attr(data-label);
+        float: left;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    table td:last-child {
+        border-bottom: 0;
+    }
+}
+
+.converter {
+    text-align: center;
+    padding-top: 0.375rem;
+    padding-right: 0.75rem;
+    padding-bottom: 0.375rem;
+    padding-left: 0.75rem;
+}
